@@ -1,0 +1,14 @@
+
+import java.util.Scanner;
+
+public class loop {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+//        String s = scan.nextLine();
+        String str = "Hello world. Have a nice day!";
+        String[] arr = str.split("[.]");
+        for(int i=0; i<arr.length; i++){
+            System.out.println("На "+(i+1) + "  абзаце " +arr[i].length() +" слов");
+        }
+    }
+}
